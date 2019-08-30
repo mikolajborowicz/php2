@@ -71,7 +71,7 @@ if(isset($_POST['email']))
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
- <link rel="stylesheet" href="style/main.css">
+ <link rel="stylesheet" href="main.css">
     <script src="htt    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Osadnicy - załóż darmowe konto</title>

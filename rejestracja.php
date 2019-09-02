@@ -58,10 +58,10 @@ if(isset($_POST['email']))
     echo $_POST['regulamin'];
     exit();
 
-    //warunek cezara
+    //!warunek cezara
     if($wszystko_OK==true)
     {
-        //dodajemy gracza do bazy
+        //walidacja sie powiodla
         echo "udana walidacja";
         exit(); 
     }    
@@ -73,11 +73,12 @@ if(isset($_POST['email']))
 <head>
     <meta charset="UTF-8">
  <link rel="stylesheet" href="main.css">
-    <script src="htt    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Osadnicy - załóż darmowe konto</title>
-   ps://www.google.com/recaptcha/api.js" async defer></script>
-</head>
+</head>   
+  
 <body>
     
     <!-- formularz przetwarzający dane i wysyłający metodą post -->

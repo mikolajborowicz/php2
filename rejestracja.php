@@ -58,7 +58,8 @@ if(isset($_POST['email']))
     echo $_POST['regulamin'];
     exit();
 
-    if($wszystko_OK=true)
+    //warunek cezara
+    if($wszystko_OK==true)
     {
         //dodajemy gracza do bazy
         echo "udana walidacja";

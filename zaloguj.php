@@ -11,7 +11,7 @@ if(!isset(($_POST['login']))||!isset($_POST['haslo']))
 //nawiązywanie połaczenia za pomocą obiektu
 require_once "connect.php";
 // @ wycisza raporty o błędach 
-$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
+$polaczenie = @new mysqli($host, $db_user,  $db_password, $db_name);
 
 
  

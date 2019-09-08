@@ -68,11 +68,16 @@ if(isset($_POST['email']))
 }
 ?>
 
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
- <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -93,27 +98,30 @@ if(isset($_SESSION['e_nick']))
 }
 ?>
 
-    <p>Email:</p> <input type="text" name="email"><br>
+   <p>Email:</p> <input type="text" name="email"><br>
 <?php if(isset($_SESSION['e_email']))
 {
     echo "<div>".$_SESSION['e_email']."</div>";
     unset($_SESSION['e_email']);
+    
 }?>
     
-    <p>Password: </p> <input type="password" name="pass"><br>
+    <p>Password:</p>  <input type="password" name="pass"><br>
 <?php if(isset($_SESSION['e_pass']))
 {
     echo '<div>'.$_SESSION['e_pass'].'</div>';
     unset($_SESSION['e_pass']);
-}?>
-    <p>Repeat password: </p> <input type="password" name="rep_pass"><br>
+}
+?>
+    <p>Repeat password:</p> <input type="password" name="rep_pass"><br>
     <label>
     <input type="checkbox" name="regulamin">Akceptuję regulamin
     </label>
+
     <!-- Captha -->
     <div class="g-recaptcha" data-sitekey="6LdH57QUAAAAAEEN82BZQRLr7gB8m-_wMvZ-i1GZ"></div>
     <input type="submit" value="zarejestruj się">
-    </form>
+</form>
 
 </body>
-</html>
+</html> 

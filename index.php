@@ -6,7 +6,7 @@
 	{
 		header('Location: gra.php');
 		exit();
-	}
+	}+
 
 ?>
 
@@ -18,10 +18,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Osadnicy - gra przeglądarkowa</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     
 <h2>Tylko martwi ujrzeli koniec wojny - Platon</h2><br>
+<div id="zegar"></div>
 
 <a href="rejestracja.php">Zarejestruj się</a>
     <!-- frormularz wysyłający w paczce login i haslo do panel.php -->
@@ -36,7 +38,6 @@
 
 <input type="submit" value="zatwierdź">
 </form>
-
 
 <?php
 if(isset($_SESSION['blad'])){
